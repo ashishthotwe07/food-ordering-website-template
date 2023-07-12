@@ -1,6 +1,6 @@
 # Food Ordering Website Template
 
-This project is a responsive website template for a food ordering service. It provides a user-friendly interface for customers to explore menu options, place orders, and get in touch with the business. The template was developed as a hands-on practice for responsive design using HTML and CSS.
+This project is a responsive website template for a food ordering service. It provides a user-friendly interface for customers to explore menu options, place orders, and get in touch with the business. The template was developed as a hands-on practice for responsive design using HTML and CSS.Click Here(https://tastyexpress-food-order.netlify.app) for live demo
 
 ## Project Overview
 
