@@ -1,12 +1,13 @@
 {
-  "name": "tastyexpress-website-template",
+  "name": "tastyexpress-food-ordering-website-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "A responsive website template for a food ordering service",
   "main": "index.html",
   "scripts": {
     "start": "serve",
     "build": "echo This is a static template, there is no bundler or bundling involved!"
   },
+  "author": "Ashish Thotwe",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codesandbox-app/static-template.git"
