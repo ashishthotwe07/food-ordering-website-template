@@ -1,0 +1,520 @@
+/* Navigation */
+#navbar {
+  flex-direction: column;
+}
+
+#navbar ul li a {
+  font-size: 1rem;
+  padding: 0px 7px;
+  padding-bottom: 8px;
+}
+/* Home section */
+#home {
+  height: 370px;
+  padding: 3px 28px;
+}
+
+/* #home::before {
+  height: auto;
+} */
+
+#home p {
+  font-size: 13px;
+}
+
+/* Services section  */
+#services {
+  flex-direction: column;
+}
+
+#services .box {
+  padding: 14px;
+  margin: 2px 0px;
+  margin-bottom: 20px;
+}
+
+/* Clients section */
+#clients {
+  flex-wrap: wrap;
+}
+
+#clients img {
+  width: 66px;
+  padding: 6px;
+  height: auto;
+}
+
+/* Contact us section */
+#contact-box form {
+  width: 80%;
+}
+/* Footer */
+
+/* Utility classes */
+/* Utility Classes */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.5rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+}
+/* 
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  background: url("Image/background.avif") no-repeat center center/cover;
+}
+.home-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 230px;
+}
+#home h1 {
+  color: #530606;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#home p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+}
+/* Chat container */
+#chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#chat-screen {
+  width: 80px;
+  height: 80px;
+  /* background-color: #007bff; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#chat-icon i {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+#chat-window {
+  width: 350px;
+  max-height: 500px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
+
+#chat-header {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#chat-header h2 {
+  margin: 0;
+}
+
+#close-chat-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#close-chat-btn:focus,
+#close-chat-btn:hover {
+  color: #f8f9fa;
+}
+
+#chat-messages {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+#chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#message-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#send-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#send-btn:focus,
+#send-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Services Section */
+
+#services-container {
+  background: linear-gradient(120deg, #f8f8f8, #eaeaea);
+  padding: 60px 0;
+  width: 100%;
+}
+
+#services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box {
+  width: 30%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(#eacda3, #d6ae7b);
+}
+.box:hover {
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.box img {
+  width: 300px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 20px;
+}
+
+.h-secondary {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e25822;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #d03c0e;
+}
+
+/* Clients Section */
+#client-section {
+  padding: 30px 0;
+  background: linear-gradient(120deg, #f8f8f8, #eaeaea);
+  text-align: center;
+}
+
+#clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  margin: 20px;
+}
+
+.client-item img {
+  width: 120px;
+  height: 120px;
+}
+
+/* Contact section */
+.contact-section {
+  background: linear-gradient(120deg, #bdc3c7, #2c3e50);
+  padding: 60px 0;
+}
+
+.contact-container {
+  text-align: center;
+}
+
+#contact-box form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#contact-box .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-box label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contact-box textarea {
+  height: 150px;
+}
+
+.btn {
+  display: inline-block;
+  /* padding: 7px 16px; */
+  background: #e25822;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #d03c0e;
+}
+
+.center {
+  text-align: center;
+}
+/* User authentication */
+
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Responsive Styles min width 360px*/
+/* Responsive Styles min width 760px*/
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #navbar ul li {
+    margin: 10px 0;
+  }
+
+  #navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  #navbar ul.show {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* Home section */
+  #home {
+    padding: 30px;
+    height: auto;
+  }
+
+  .home-info {
+    margin-top: 100px;
+  }
+
+  #home h1 {
+    font-size: 1.5rem;
+  }
+
+  #home p {
+    font-size: 1.2rem;
+  }
+
+  /* Services section */
+  #services-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #services .box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* Clients section */
+  #client-section {
+    padding: 40px;
+  }
+
+  .client-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Contact section */
+  .contact-container {
+    padding: 40px;
+  }
+
+  #contact-box form {
+    width: 100%;
+  }
+
+  #contact-box input,
+  #contact-box textarea {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .btn {
+    font-size: 0.7rem;
+  }
+  #home h1 {
+    font-size: 1.5rem;
+  }
+  .box {
+    margin: 0;
+    padding: 0px;
+  }
+  .h-primary {
+    font-size: 2rem;
+  }
+  #chat-container {
+    top: 300px;
+  }
+}
